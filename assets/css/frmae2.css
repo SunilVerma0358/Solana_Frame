@@ -1,0 +1,44 @@
+@import url(./root.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1140px !important;
+}
+
+/* line-height , letter space */
+.lh-96 {
+    line-height: 96px
+}
+
+.lh-24 {
+    line-height: 24px;
+}
+
+.lh-20 {
+    line-height: 20px;
+}
+
+.l-space-0-48 {
+    letter-spacing: 0.48px;
+}
+
+/* .button */
+.build {
+    padding: 10px 21px 12px 21px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    background-color: var(--color-green);
+}
+.stack {
+    padding: 10px 21px 12px 21px;
+    border-radius: 24px;
+    border: 1px solid var(--color-white);
+    background-color: var(--color-green);
+}
