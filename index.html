@@ -9,16 +9,23 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg_body_color">
+<body class="bg_body_color bg-bodys">
+    <div class="over-layer"></div>
     <!-- hero-section -->
-    <p class=" text-center bg_color mb-0">Breakpoint 2023 - New City. New Vibes - Get Early Access -></p>
-    <section class=" bg_section_img vh-100">
-
-        <header class="bg_nav py_20">
-            <div class="container custom_container">
+    <p class=" text-center bg_color mb-0 ff_primery fs_4xsm fw-normal">Breakpoint 2023 - New City. New Vibes - Get Early
+        Access ->
+    </p>
+    <header class=" bg_section_img">
+        <nav class="bg_nav py_20">
+            <div class="container">
                 <nav class="d-flex align-items-center justify-content-between ">
                     <a href="#"><img src="./assets/image/logo.png" alt="logo"></a>
                     <label id="nav" class="nav">
@@ -131,19 +138,164 @@
                     </ul>
                 </nav>
             </div>
-        </header>
-        <!-- hero -->
-        <div class="container custom_container">
-            <div class="d-flex justify-contant"></div>
-            <h1 class="mb-0 text-center">Powerful for developers.</h1>
-            <h1 class="mb-0 text-center">Fast for everyone.</h1>
-
+        </nav>
+        <!--hero-->
+        <div class="d-flex align-items-center justify-content-center flex-column vh-100">
+            <div class="container">
+                <h1 class="mb-0 text-center ff_main fw-normal fs_xxl color_white lh_heading1">Powerful for developers.
+                </h1>
+                <h1 class="mb-0 text-center ff_main fw-normal fs_xxl color_white pb-2 lh_heading1">Fast for everyone.
+                </h1>
+                <p
+                    class="mb-0 text-center hero_phara_lh ff_main fw-normal fs_4xsm color_white mw_custom_481 mx-auto pt-3 pt-sm-5 ">
+                    Bring blockchain to the people. Solana supports experiences for power users, new consumers, and
+                    everyone in between.</p>
+                <div class="text-center py-4 py-sm-5">
+                    <button class="start_btn me-1 me-sm-2 ff_main fw-normal fs_2xsm">START BUILDING</button>
+                    <button class="read_btn ms-1 ms-sm-2 ff_main fw-normal fs_2xsm">READ DOCS</button>
+                </div>
+                <p class="mb-0 ff_main fw-normal color_blue text-center fs_2xsm pt-4 pt-sm-5 pb-1">Powering tools and
+                    integrations from companies all around the world
+                </p>
+                <div class="img_slider pt-4">
+                    <div><img class="abc" src="./assets/image/brave.png" alt="brave"></div>
+                    <div><img class="abc" src="./assets/image/circle.png" alt="brave"></div>
+                    <div><img class="abc" src="./assets/image/discord.png" alt="brave"></div>
+                    <div><img class="abc" src="./assets/image/google.png" alt="brave"></div>
+                    <div><img class="abc" src="./assets/image/jump.png" alt="brave"></div>
+                    <div><img class="abc" src="./assets/image/lazzin.png" alt="brave"></div>
+                    <div><img class="abc" src="./assets/image/magic.png" alt="brave"></div>
+                    <div><img class="abc" src="./assets/image/lazzin.png" alt="brave"></div>
+                    <div><img class="abc" src="./assets/image/magic.png" alt="brave"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- section-two -->
+    <section class="bg_img">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-lg-6">
+                    <div class="d-flex flex-column justify-content-center pt-5">
+                        <h2 class="mb-0 ff_main fw-normal fs_4xlg color_white">Join a community</h2>
+                        <h2 class="mb-0 ff_main fw-normal fs_4xlg color_white">of millions</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="mb-0 ff_main fw-normal fs_3xl heading_11 ">11.5M+</p>
+                    <p class="mb-0 ff_primery fw-normal fs_3xsm color_main">Active accounts</p>
+                    <p class="mb-0 ff_main fw-normal fs_4xl heading_12">21.9M</p>
+                    <p class="mb-0 ff_primery fw-normal fs_3xsm color_main">NFTs minted</p>
+                    <p class="mb-0 ff_main fw-normal fs_5xl heading_13">$0.00025</p>
+                    <p class="mb-0 ff_primery fw-normal fs_3xsm color_main">Average cost per transaction</p>
+                </div>
+            </div>
+            <div class="row pt_64">
+                <div class="col-lg-4 pt_64">
+                    <h2 class="mb-0 ff_main fw-normal fs_4xlg color_white">Made for</h2>
+                    <h2 class="mb-0 ff_main fw-normal fs_4xlg color_white">mass adoption</h2>
+                    <p class="mb-0 ff_main fw-normal fs_3xsm color_main blue_dot">Live data</p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-sm-6 pt_64">
+                            <div class="common_card">
+                                <p class="mb-0 fast_line ff_main fw-normal fs_5xmd color_white ps-3 pb-2 bg_lightblue">
+                                    Fast</p>
+                                <p class="mb-0 ff_main fw-normal color_main fs_4xsm mw_custom_250 ">Don’t keep your
+                                    users waiting. Solana has block times of 400 milliseconds — and as hardware gets
+                                    faster, so will the network.</p>
+                                <p class="lightblue_dot mb-0 ff_main fw-normal fs_5xmd color_white pt-4 ps-2">3,969</p>
+                                <p class="mb-0 ff_primery fw-normal color_main fs_3xsm pt_11">Transactions per second
+                                </p>
+                            </div>
+                            <div class="common_card mt-2">
+                                <p class="mb-0 parple_line ff_main fw-normal fs_5xmd color_white ps-3 pb-2">Scalable</p>
+                                <p class="mb-0 ff_main fw-normal color_main fs_4xsm mw_custom_263 ">Get big, quick.
+                                    Solana is made to handle thousands of transactions per second, and fees for both
+                                    developers and users remain less than $0.01.</p>
+                                <p class="lightblue_dot mb-0 ff_main fw-normal fs_5xmd color_white pt-4 ps-2">
+                                    163,077,581,394
+                                </p>
+                                <p class="mb-0 ff_primery fw-normal color_main fs_3xsm pt_11">Total transactions</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="common_card">
+                                <p class="mb-0 yellow_line ff_main fw-normal fs_5xmd color_white ps-3 pb-2">
+                                    Decentralized</p>
+                                <p class="mb-0 ff_main fw-normal color_main fs_4xsm mw_custom_270 ">The Solana network
+                                    is validated by thousands of nodes that operate independently of each other,
+                                    ensuring your data remains secure and censorship resistant.</p>
+                                <p class="lightblue_dot mb-0 ff_main fw-normal fs_5xmd color_white pt-4 ps-2">1,675
+                                </p>
+                                <p class="mb-0 ff_primery fw-normal color_main fs_3xsm pt_11">Validator nodes</p>
+                            </div>
+                            <div class="common_card mt-3">
+                                <p class="mb-0 green_line ff_main fw-normal fs_5xmd color_white ps-3 pb-2">Energy
+                                    Efficient
+                                </p>
+                                <p class="mb-0 ff_main fw-normal color_main fs_4xsm mw_custom_267 ">Solana’s proof of
+                                    stake network and other innovations minimize its impact on the environment. Each
+                                    Solana transaction uses about the same energy as a few Google searches.</p>
+                                <p class=" mb-0 ff_main fw-normal fs_5xmd color_white pt-4">0%</p>
+                                <p class="mb-0 ff_primery fw-normal color_main fs_3xsm pt_11">Net carbon impact</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js "
+        integrity=" sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin=" anonymous " referrerpolicy="no-referrer ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
     <script src="./assets/js/app.js"></script>
+    <script>
+        $('.img_slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 2000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            swipeToSlide: true,
+            centerMode: true,
+            focusOnSelect: true,
+            arrows: false,
+            slidesToShow: 7,
+            slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        })
+    </script>
 </body>
 
 </html>

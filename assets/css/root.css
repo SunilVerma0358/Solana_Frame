@@ -3,9 +3,9 @@
     /* font-size */
     --fs-sm: 11px;
     --fs-xsm: 12px;
-    --fs-2xsm: 15px;
+    --fs-2xsm: 12px;
     --fs-3xsm: 16px;
-    --fs-4xsm: 17px;
+    --fs-4xsm: 15px;
     --fs-5xsm: 18px;
     --fs-md: 19px;
     --fs-xmd: 20px;
@@ -18,10 +18,10 @@
     --fs-2xlg: 36px;
     --fs-3xlg: 37px;
     --fs-4xlg: 38px;
-    --fs-5xlg: 39px;
+    --fs-5xlg: 17px;
     --fs-xl: 42px;
-    --fs-xxl: 70px;
-    --fs-2xl: 94px;
+    --fs-xxl: 26px;
+    --fs-2xl: 63px;
     --fs-3xl: 101px;
     --fs-4xl: 106px;
     --fs-5xl: 110px;
@@ -89,6 +89,10 @@
 
 .color_card_secondary {
     color: var(--color-card-secondary)
+}
+
+.color_blue {
+    color: var(--color-light-blue);
 }
 
 
@@ -188,4 +192,55 @@
 
 .fs_5xl {
     font-size: var(--fs-5xl);
+}
+
+
+/* media quary */
+
+@media (min-width:575.5px) {
+     :root {
+        --fs-2xsm: 15px;
+        --fs-4xsm: 17px;
+        --fs-5xlg: 39px;
+        --fs-xxl: 50px;
+        --fs-2xl: 94px;
+    }
+}
+
+@media (min-width:767.5px) {
+     :root {
+        --fs-xxl: 70px;
+    }
+}
+
+@media (min-width:992.5px) {}
+
+@media (min-width:1199.5px) {
+     :root {
+        /* font-size */
+        --fs-sm: 11px;
+        --fs-xsm: 12px;
+        --fs-2xsm: 15px;
+        --fs-3xsm: 16px;
+        --fs-4xsm: 17px;
+        --fs-5xsm: 18px;
+        --fs-md: 19px;
+        --fs-xmd: 20px;
+        --fs-2xmd: 21px;
+        --fs-3xmd: 25px;
+        --fs-4xmd: 26px;
+        --fs-5xmd: 28px;
+        --fs-lg: 32px;
+        --fs-xlg: 35px;
+        --fs-2xlg: 36px;
+        --fs-3xlg: 37px;
+        --fs-4xlg: 38px;
+        --fs-5xlg: 39px;
+        --fs-xl: 42px;
+        --fs-xxl: 70px;
+        --fs-2xl: 94px;
+        --fs-3xl: 101px;
+        --fs-4xl: 106px;
+        --fs-5xl: 110px;
+    }
 }
