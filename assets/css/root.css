@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 :root {
     /* font-size */
     --fs-sm: 11px;
@@ -34,7 +35,21 @@
     --color-green: #19FB9B;
     --primery-parple: #A962FF;
     --color-light-gray: #848895;
-    --color-card-secondary: #19161C;
+    --color-card-secondary: hsl(270, 12%, 10%);
+    /* font-family */
+    --ff-main: Helvetica;
+    --ff-primery: 'Roboto', sans-serif;
+}
+
+
+/* font-family */
+
+.ff_main {
+    font-family: var(--ff-main);
+}
+
+.ff_primery {
+    font-family: var(--ff-primery);
 }
 
 

@@ -6,3 +6,151 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
+
+/* common-class */
+
+.bg_body_color {
+    background-color: var(--color-black);
+}
+
+.custom_container {
+    max-width: 1140px !important;
+}
+
+
+/* padding */
+
+.py_20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* gap */
+
+.gap_32 {
+    gap: 32px;
+}
+
+
+/* blue */
+
+.bg_color {
+    padding: 5px 0px 4px 0px;
+    background: linear-gradient(260.33deg, #0047FF -13.37%, #00BCD4 109.53%);
+    ;
+}
+
+.bg_section_img {
+    background-image: url('../image/hero_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg_nav {
+    background-color: #00000099;
+}
+
+nav ul li a {
+    text-decoration: none !important;
+    color: var( --color-light-gray);
+    font-family: var(--ff-main);
+    font-size: var(--fs-4xsm);
+}
+
+.fix1,
+.fix2,
+.fix3 {
+    transition: all 0.2s ease-in-out;
+}
+
+.left-corner {
+    left: 9px;
+}
+
+.fixer1 {
+    display: none;
+}
+
+.fixer2 {
+    transform: rotate(48deg) translate(3px, -1px);
+}
+
+.fixer3 {
+    transform: rotate(-45deg) translate(13px, -10px);
+}
+
+
+/* dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00000099;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 14px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.arrow {
+    transition: all linear 300ms;
+}
+
+.dropdown:hover svg {
+    transform: rotate(180deg);
+}
+
+@media (max-width:767.5px) {
+    label[id="nav"] {
+        width: 30px;
+        height: 24px;
+        cursor: pointer;
+        position: absolute;
+        right: 9px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        z-index: 4;
+    }
+    label[id="nav"]>span {
+        width: 100%;
+        height: 5px;
+        background-color: var(--color-light-gray);
+    }
+    .left-corner {
+        left: 9px;
+    }
+    .menubar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        background-color: #00000099;
+        position: fixed;
+        top: 0;
+        z-index: 3;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .left-0 {
+        left: 0;
+    }
+}
