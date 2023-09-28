@@ -1,30 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 :root {
     /* font-size */
     --fs-sm: 11px;
     --fs-xsm: 12px;
     --fs-2xsm: 12px;
-    --fs-3xsm: 16px;
+    --fs-3xsm: 12px;
     --fs-4xsm: 15px;
     --fs-5xsm: 18px;
     --fs-md: 19px;
     --fs-xmd: 20px;
-    --fs-2xmd: 21px;
+    --fs-2xmd: 17px;
     --fs-3xmd: 25px;
     --fs-4xmd: 26px;
     --fs-5xmd: 28px;
-    --fs-lg: 32px;
+    --fs-lg: 19px;
     --fs-xlg: 35px;
     --fs-2xlg: 36px;
     --fs-3xlg: 37px;
-    --fs-4xlg: 38px;
-    --fs-5xlg: 17px;
+    --fs-4xlg: 30px;
+    --fs-5xlg: 25px;
     --fs-xl: 42px;
-    --fs-xxl: 26px;
+    --fs-xxl2: 25px;
+    --fs-xxl: 25px;
     --fs-2xl: 63px;
-    --fs-3xl: 101px;
-    --fs-4xl: 106px;
-    --fs-5xl: 110px;
+    --fs-3xl: 60px;
+    --fs-4xl: 63px;
+    --fs-5xl: 63px;
     /* color */
     --color-main: #C4C4C4;
     --color-black: #000000;
@@ -80,7 +81,7 @@
 }
 
 .color_primery_parple {
-    color: var(--color-primery-parple)
+    color: var(--primery-parple)
 }
 
 .color_nav_footer {
@@ -178,6 +179,10 @@
     font-size: var(--fs-xxl);
 }
 
+.fs_xxl2 {
+    font-size: var(--fs-xxl2);
+}
+
 .fs_2xl {
     font-size: var(--fs-2xl);
 }
@@ -200,16 +205,22 @@
 @media (min-width:575.5px) {
      :root {
         --fs-2xsm: 15px;
+        --fs-3xsm: 16px;
         --fs-4xsm: 17px;
+        --fs-2xmd: 21px;
+        --fs-lg: 32px;
+        --fs-4xlg: 38px;
         --fs-5xlg: 39px;
         --fs-xxl: 50px;
+        --fs-xxl2: 50px;
         --fs-2xl: 94px;
     }
 }
 
 @media (min-width:767.5px) {
      :root {
-        --fs-xxl: 70px;
+        --fs-xxl: 50px;
+        --fs-xxl2: 50px;
     }
 }
 
@@ -237,6 +248,7 @@
         --fs-4xlg: 38px;
         --fs-5xlg: 39px;
         --fs-xl: 42px;
+        --fs-xxl2: 68px;
         --fs-xxl: 70px;
         --fs-2xl: 94px;
         --fs-3xl: 101px;
