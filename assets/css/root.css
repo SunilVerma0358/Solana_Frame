@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@font-face {
+    font-family:  Helvetica;
+    src: url(../font/Helvetica-Font/helvetica-light-587ebe5a59211.ttf);
+}
 :root {
     /* font-size */
     --fs-sm: 11px;
@@ -80,7 +84,7 @@
 }
 
 .color_primery_parple {
-    color: var(--color-primery-parple)
+    color: var(--primery-parple)
 }
 
 .color_nav_footer {

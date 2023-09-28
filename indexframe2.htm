@@ -12,7 +12,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="bg-black overflow-x-hidden">
+<body class="bg-black bg-bodys">
+    <div class="over-layer"></div>
+    <!-- header nav bar -->
     <header>
         <p class=" text-center bg_color mb-0 fs_4xsm fw-normal lh-27 text-uppercase color_black ff_primery ">Breakpoint
             2023 - New City. New Vibes - Get Early Access -></p>
@@ -26,7 +28,7 @@
                 </label>
                 <ul class="d-flex align-items-center gap_32 px-0 mb-0 menubar">
                     <li class="dropdown">
-                        <a href="#" class=" d-flex align-items-center drop gap-2">
+                        <a href="#" class=" d-flex align-items-center drop gap-2 nav-ico">
                             <p class="mb-0">Learn</p>
                             <p class=" mb-0 "><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <g clip-path="url(#clip0_1479_1207)">
@@ -38,13 +40,13 @@
                             </p>
                         </a>
                         <div class="dropdown-content">
-                            <a href="#">Network</a>
-                            <a href="#">Community</a>
-                            <a href="#">Learn</a>
+                            <a href="#network" class="under-hover finish">Network</a>
+                            <a href="#community" class="under-hover finish">Community</a>
+                            <a href="#learn" class="under-hover finish">Learn</a>
                         </div>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class=" d-flex align-items-center drop gap-2">
+                    <li>
+                        <a href="./index.html" class=" d-flex align-items-center  gap-2 onchangeindex finish">
                             <p class="mb-0">Build</p>
                             <p class=" mb-0 "><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <g clip-path="url(#clip0_1479_1207)">
@@ -56,14 +58,9 @@
 
                             </p>
                         </a>
-                        <div class="dropdown-content">
-                            <a href="#">Network</a>
-                            <a href="#">Community</a>
-                            <a href="#">Learn</a>
-                        </div>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class=" d-flex align-items-center drop gap-2">
+                        <a href="#" class=" d-flex align-items-center drop gap-2 nav-ico">
                             <p class="mb-0">Network</p>
                             <p class=" mb-0 "><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <g clip-path="url(#clip0_1479_1207)">
@@ -74,13 +71,13 @@
                                 </svg></p>
                         </a>
                         <div class="dropdown-content">
-                            <a href="#">Network</a>
-                            <a href="#">Community</a>
-                            <a href="#">Learn</a>
+                            <a href="#network" class="under-hover finish">Network</a>
+                            <a href="#community" class="under-hover finish">Community</a>
+                            <a href="#learn" class="under-hover finish">Learn</a>
                         </div>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class=" d-flex align-items-center drop gap-2">
+                        <a href="#" class=" d-flex align-items-center drop gap-2 nav-ico">
                             <p class="mb-0">Community</p>
                             <p class=" mb-0 "><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <g clip-path="url(#clip0_1479_1207)">
@@ -93,9 +90,9 @@
                             </p>
                         </a>
                         <div class="dropdown-content">
-                            <a href="#">Network</a>
-                            <a href="#">Community</a>
-                            <a href="#">Learn</a>
+                            <a href="#network" class="under-hover finish">Network</a>
+                            <a href="#community" class="under-hover finish">Community</a>
+                            <a href="#learn" class="under-hover finish">Learn</a>
                         </div>
                     </li>
 
@@ -103,7 +100,8 @@
             </div>
         </nav>
     </header>
-    <section class="position-relative min-vh_100 d-flex">
+    <!-- developer resourse -->
+    <section class="position-relative min-vh_100 d-flex overflow-idden ">
         <div class="container flex-grow-1 d-xl-flex ">
             <div class="row flex-grow-1 flex-column-reverse flex-xl-row">
                 <div data-aos="fade-right" class="col-xl-5 d-flex align-items-center ">
@@ -139,7 +137,8 @@
             </div>
         </div>
     </section>
-    <section class="pt-4 mt-4 pt-sm-5 mt-sm-5 mt-lg-0 pt-lg-0">
+    <!-- get satarted -->
+    <section class="pt-4 mt-4 pt-sm-5 mt-sm-5 mt-lg-0 pt-lg-0" id="network">
         <div class="container">
             <h2 data-aos="fade-down" class="color_white fs_4xlg fw-normal lh-42 ff_main l-space-0-68 mb-0">Get started.
             </h2>
@@ -147,7 +146,7 @@
                 Foundation and community
                 courses
                 to begin your journey into Solana development.</p>
-            <div data-aos="fade-right" class="bg-salona-17 chapter-17 mt-3">
+            <div class="bg-salona-17 chapter-17 mt-3">
                 <button class="fs_sm fw-normal lh-18 ff_main color_white chapter">17 Chapters</button>
                 <p class="fs_5xlg fw-normal color_white lh-40 ff_main pt-3 mb-0 pb-3">Solana Development Course</p>
                 <p class="fs_5xsm fw-normal color_white lh-27 ff_main mx-387 pt-3 mb-0">Quickstart your Solana
@@ -163,7 +162,7 @@
                 </div>
             </div>
             <div class="row pt-4">
-                <div data-aos="fade-right" class="col-lg-4 col-sm-6 col-12">
+                <div class="col-lg-4 col-sm-6 col-12">
                     <div class="bg-chapter14 attract-started">
                         <div class="content-of-chapter introduction">
                             <button class="fs_sm fw-normal lh-18 ff_main color_white chapter mb-0 pb-1">14
@@ -185,7 +184,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-down" class="col-lg-4 col-sm-6 col-12 mt-4 mt-sm-0">
+                <div class="col-lg-4 col-sm-6 col-12 mt-4 mt-sm-0">
                     <div class="bg-chapter12 attract-started">
                         <div class="content-of-chapter introduction">
                             <button class="fs_sm fw-normal lh-18 ff_main color_white chapter mb-0 pb-1">12
@@ -207,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-left" class="col-lg-4 col-sm-6 col-12 mt-4 mt-lg-0 ">
+                <div class="col-lg-4 col-sm-6 col-12 mt-4 mt-lg-0 ">
                     <div class="bg-chapter1 attract-started">
                         <div class="content-of-chapter introduction">
                             <button class="fs_sm fw-normal lh-18 ff_main color_white chapter mb-0 pb-1">1
@@ -229,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-right" class="col-lg-4 col-sm-6 col-12 mt-4">
+                <div class="col-lg-4 col-sm-6 col-12 mt-4">
                     <div class="bg-chapter3 attract-started">
                         <div class="content-of-chapter introduction">
                             <button class="fs_sm fw-normal lh-18 ff_main color_white chapter mb-0 pb-1">13
@@ -251,7 +250,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-up" class="col-lg-4 col-sm-6 col-12 mt-4">
+                <div class="col-lg-4 col-sm-6 col-12 mt-4">
                     <div class="bg-chapter167 attract-started">
                         <div class="content-of-chapter introduction">
                             <button class="fs_sm fw-normal lh-18 ff_main color_white chapter mb-0 pb-1">167
@@ -273,7 +272,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-left" class="col-lg-4 col-sm-6 col-12 mt-4">
+                <div class="col-lg-4 col-sm-6 col-12 mt-4">
                     <div class="bg-chapter8 attract-started">
                         <div class="content-of-chapter introduction">
                             <button class="fs_sm fw-normal lh-18 ff_main color_white chapter mb-0 pb-1">8
@@ -298,7 +297,8 @@
             </div>
         </div>
     </section>
-    <section class="pt-4 mt-4 pt-sm-5 mt-sm-5">
+    <!-- learn deeper -->
+    <section class="pt-4 mt-4 pt-sm-5 mt-sm-5" id="learn">
         <div class="container pt-2 mt-1 pt-sm-4">
             <h2 data-aos="fade-down" class="color_white ff_main fs_3xlg lh-42 l-space-0-68 fw-normal mb-0">Dig deeper.
             </h2>
@@ -306,7 +306,7 @@
                 greater Solana
                 ecosystem.</p>
             <div class="row pt-4 mt-2">
-                <div data-aos="fade-right" class="col-lg-4 col-sm-6 ">
+                <div class="col-lg-4 col-sm-6 ">
                     <div class="dig-depper-card position-relative overflow-hidden">
                         <p class="fs_xsm fw-normal ff_main text-uppercase l-space-1-5 color_primery_parple lh-19 mb-0">
                             tool / library</p>
@@ -314,7 +314,7 @@
                         <p class="color_white fs_3xsm fw-normal lh-27 ff_main mw-260 mb-0">The official Solana
                             documentation
                             on developing, validators, SPL tokens, wallets and more.</p>
-                        <a href="#" class="text-decoration-none d-flex gap-2 pt-5">
+                        <a href="#" class="text-decoration-none d-flex gap-2 pt-4 pt-sm-5">
                             <p class="mb-0 fs_sm fw-normal color_white text-uppercase l-space-0-68 lh-27 ff_main">Learn
                                 more</p>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -327,7 +327,7 @@
                         <div class="ellipes-big-depper"></div>
                     </div>
                 </div>
-                <div data-aos="fade-down" class="col-lg-4 col-sm-6 mt-4 mt-sm-0">
+                <div class="col-lg-4 col-sm-6 mt-4 mt-sm-0">
                     <div class="dig-depper-card position-relative overflow-hidden">
                         <p class="fs_xsm fw-normal ff_main text-uppercase l-space-1-5 color_primery_parple lh-19 mb-0">
                             tool / library</p>
@@ -349,14 +349,14 @@
                         <div class="ellipes-big-depper"></div>
                     </div>
                 </div>
-                <div data-aos="fade-left" class="col-lg-4 col-sm-6 mt-4 mt-lg-0">
+                <div class="col-lg-4 col-sm-6 mt-4 mt-lg-0">
                     <div class="dig-depper-card position-relative overflow-hidden">
                         <p class="fs_xsm fw-normal ff_main text-uppercase l-space-1-5 color_primery_parple lh-19 mb-0">
                             tool / library</p>
                         <p class="fw-normal fs_md lh-19 ff_main color_white pt-2">Solana Stack Exchange</p>
                         <p class="color_white fs_3xsm fw-normal lh-27 ff_main mw-260 mb-0">Solana Stack Exchange is a
                             question and answer site for Solana software users and developers.</p>
-                        <a href="#" class="text-decoration-none d-flex gap-2 pt-5">
+                        <a href="#" class="text-decoration-none d-flex gap-2 pt-4 pt-sm-5">
                             <p class="mb-0 fs_sm fw-normal color_white text-uppercase l-space-0-68 lh-27 ff_main">Learn
                                 more</p>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -369,14 +369,14 @@
                         <div class="ellipes-big-depper"></div>
                     </div>
                 </div>
-                <div data-aos="fade-right" class="col-lg-4 col-sm-6  mt-4">
+                <div class="col-lg-4 col-sm-6  mt-4">
                     <div class="dig-depper-card position-relative overflow-hidden">
                         <p class="fs_xsm fw-normal ff_main text-uppercase l-space-1-5 color_primery_parple lh-19 mb-0">
                             tool / library</p>
                         <p class="fw-normal fs_md lh-19 ff_main color_white pt-2">Solana Playground</p>
                         <p class="color_white fs_3xsm fw-normal lh-27 ff_main mw-260 mb-0">Easily build, deploy and test
                             Solana programs and smart contracts from a browser IDE.</p>
-                        <a href="#" class="text-decoration-none d-flex gap-2 mt-5">
+                        <a href="#" class="text-decoration-none d-flex gap-2 pt-4 pt-sm-5">
                             <p class="mb-0 fs_sm fw-normal color_white text-uppercase l-space-0-68 lh-27 ff_main">Learn
                                 more</p>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -389,14 +389,14 @@
                         <div class="ellipes-big-depper"></div>
                     </div>
                 </div>
-                <div data-aos="fade-up" class="col-lg-4 col-sm-6  mt-4">
+                <div class="col-lg-4 col-sm-6  mt-4">
                     <div class="dig-depper-card position-relative overflow-hidden">
                         <p class="fs_xsm fw-normal ff_main text-uppercase l-space-1-5 color_primery_parple lh-19 mb-0">
                             tool / library</p>
                         <p class="fw-normal fs_md lh-19 ff_main color_white pt-2">create-solana-dapp</p>
                         <p class="color_white fs_3xsm fw-normal lh-27 ff_main mw-260 mb-0">Get up and running fast with
                             Solana dApps, generate a project template in seconds.</p>
-                        <a href="#" class="text-decoration-none d-flex gap-2 mt-5">
+                        <a href="#" class="text-decoration-none d-flex gap-2 pt-4 pt-sm-5">
                             <p class="mb-0 fs_sm fw-normal color_white text-uppercase l-space-0-68 lh-27 ff_main">Learn
                                 more</p>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -409,7 +409,7 @@
                         <div class="ellipes-big-depper"></div>
                     </div>
                 </div>
-                <div data-aos="fade-left" class="col-lg-4 col-sm-6  mt-4">
+                <div class="col-lg-4 col-sm-6  mt-4">
                     <div class="dig-depper-card position-relative overflow-hidden">
                         <p class="fs_xsm fw-normal ff_main text-uppercase l-space-1-5 color_primery_parple lh-19 mb-0">
                             tool / library</p>
@@ -431,7 +431,7 @@
                         <div class="ellipes-big-depper"></div>
                     </div>
                 </div>
-                <div data-aos="fade-right" class="col-lg-4 col-sm-6  mt-4">
+                <div class="col-lg-4 col-sm-6  mt-4">
                     <div class="dig-depper-card position-relative overflow-hidden">
                         <p class="fs_xsm fw-normal ff_main text-uppercase l-space-1-5 color_primery_parple lh-19 mb-0">
                             tool / library</p>
@@ -452,7 +452,7 @@
                         <div class="ellipes-big-depper"></div>
                     </div>
                 </div>
-                <div data-aos="fade-down" class="col-lg-4 col-sm-6  mt-4">
+                <div class="col-lg-4 col-sm-6  mt-4">
                     <div class="dig-depper-card position-relative overflow-hidden">
                         <p class="fs_xsm fw-normal ff_main text-uppercase l-space-1-5 color_primery_parple lh-19 mb-0">
                             tool / library</p>
@@ -460,7 +460,7 @@
                         <p class="color_white fs_3xsm fw-normal lh-27 ff_main mw-260 mb-0">A list of curated examples
                             for a
                             wide range of use cases implemented using on-chain programs.</p>
-                        <a href="#" class="text-decoration-none d-flex gap-2 mt-5">
+                        <a href="#" class="text-decoration-none d-flex gap-2 pt-4 pt-sm-5">
                             <p class="mb-0 fs_sm fw-normal color_white text-uppercase l-space-0-68 lh-27 ff_main">Learn
                                 more</p>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -476,7 +476,8 @@
             </div>
         </div>
     </section>
-    <section class="bg-gradiant-source big-margin pt-1 pb-4 mb-2">
+    <!-- go to sourse or salon change -->
+    <section class="bg-gradiant-source big-margin pt-1 pb-4 mb-2 overflow-x-hidden " id="community">
         <div class="container pt-5 mt-4">
             <h2 data-aos="fade-down" class="fs_2xlg fw-normal l-space-0-68 lh-42 ff_main color_white mb-0">Go to the
                 source.</h2>
@@ -484,7 +485,7 @@
                 greater Solana
                 ecosystem.</p>
             <div class="row pt-5">
-                <div data-aos="fade-right" class="col-md-6">
+                <div  class="col-md-6">
                     <div class="d-flex justify-content-between align-items-center undermainline pb-4 mb-2">
                         <p class="fs_lg fw-normal lh-33 color_white ff_main mb-0 pb-2">Solana Docs</p>
                         <button
@@ -501,7 +502,7 @@
                     <p class="color_white ff_main fs_xmd fw-normal lh-27 mx-393 pt-4 mb-0">Learn how Solana works and
                         get a high-level understanding of Solana's architecture.</p>
                 </div>
-                <div data-aos="fade-left" class="col-md-6 mt-5 mt-md-0 px-4">
+                <div  class="col-md-6 mt-5 mt-md-0 px-4">
                     <div class="d-flex justify-content-between align-items-center undermainline pb-4 mb-2">
                         <p class="fs_lg fw-normal lh-33 color_white ff_main mb-0 pb-2">Metaplex Docs</p>
                         <button
@@ -538,7 +539,8 @@
             </div>
         </div>
     </section>
-    <section class="pt-2 mt-2 mt-sm-5 pt-sm-5  pb-2 pb-sm-5">
+    <!-- contact -->
+    <section class="pt-2 mt-2 mt-sm-5 pt-sm-5  pb-2 pb-sm-5 overflow-x-hidden ">
         <div class="container">
             <div class="row">
                 <div data-aos="fade-right" class="col-md-6">
@@ -570,8 +572,8 @@
                                 community developers.</p>
                             <div
                                 class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between gap-4 pt-5 px-auto">
-                                <button
-                                    class="color_white text-center text-uppercase lh-20 fw-normal ff_primery fs_2xsm d-flex align-items-center gap-2 youtube">YouTube
+                                <a href="https://www.youtube.com/" target="_blank"
+                                    class="color_white text-center text-uppercase lh-20 fw-normal ff_primery fs_2xsm d-flex align-items-center gap-2 youtube text-decoration-none">YouTube
                                     <svg width="27" height="20" viewBox="0 0 27 20" fill="none">
                                         <g clip-path="url(#clip0_1479_1507)">
                                             <path
@@ -581,9 +583,9 @@
                                                 fill="white" />
                                         </g>
                                     </svg>
-                                </button>
-                                <button
-                                    class="color_white text-center text-uppercase lh-20 fw-normal ff_primery fs_2xsm d-flex align-items-center gap-2 youtube">Podcast
+                                </a>
+                                <a href="https://www.theprodcast.net/" target="_blank"
+                                    class="color_white text-center text-uppercase lh-20 fw-normal ff_primery fs_2xsm d-flex align-items-center gap-2 youtube text-decoration-none">Podcast
                                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
                                         <g clip-path="url(#clip0_1479_1513)">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -605,7 +607,7 @@
                                             </clipPath>
                                         </defs>
                                     </svg>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -613,10 +615,11 @@
             </div>
         </div>
     </section>
-    <footer class="mt-2 mt-sm-4 main-footer-bg pb-2 pb-sm-5">
+    <!-- footer -->
+    <footer class="mt-2 mt-sm-4 main-footer-bg pb-2 pb-sm-5 overflow-x-hidden ">
         <div class="container mt-2 mt-sm-4 pt-2 pt-sm-5 mb-0 mb-sm-2 pb-2 pb-sm-4 ">
             <div class="row">
-                <div data-aos="fade-right" class="col-lg-7 col-md-6">
+                <div class="col-lg-7 col-md-6">
                     <a href="#" class="mb-1"><img src="./assets/image/iconfooter.png" alt="iconfooter"></a>
                     <p class="color_white ff_primery fs_3xsm fw-normal lh-27 pt-3">Managed by Solana Foundation</p>
                     <div class="d-flex gap-10 mb-1">
@@ -645,7 +648,7 @@
                                     fill="black" />
                             </svg>
                         </a>
-                        <a href="#" target="_blank" class="bg-svg-footer"><svg width="26" height="16"
+                        <a href="https://www.reddit.com/" target="_blank" class="bg-svg-footer"><svg width="26" height="16"
                                 viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1479_1583)">
                                     <rect width="26" height="16" rx="8" fill="white" />
@@ -684,7 +687,7 @@
                     <p class="color_nav_footer ff_main fs_3xsm fw-normal lh-27 pt-4">© 2023 Solana Foundation. All
                         rights reserved.</p>
                 </div>
-                <div data-aos="fade-left" class="col-lg-5 col-md-6 mt-4 mt-md-0">
+                <div class="col-lg-5 col-md-6 mt-4 mt-md-0">
                     <div class="row">
                         <div class="col-4">
                             <ul class="mb-0 px-0">
@@ -744,10 +747,10 @@
             </div>
         </div>
     </footer>
+    <script src="./assets/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
-    <script src="./assets/js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init({
             duration: 1800,

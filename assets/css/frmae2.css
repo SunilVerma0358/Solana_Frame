@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    scroll-behavior: smooth;
     /* outline: 1px solid red; */
 }
 
@@ -30,6 +31,24 @@ nav ul li a {
     font-size: var(--fs-4xsm);
 }
 
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.over-layer {
+    position: absolute;
+    width: 100%;
+    height: 1000%;
+    top: 0;
+    left: -100%;
+    background: #ffd3823c;
+    z-index: 1;
+}
+
+.over-flow {
+    overflow: hidden;
+}
+
 .fix1,
 .fix2,
 .fix3 {
@@ -51,13 +70,36 @@ nav ul li a {
 .fixer3 {
     transform: rotate(-45deg) translate(13px, -10px);
 }
-
-
 /* dropdown */
 
 .dropdown {
     position: relative;
     display: inline-block;
+}
+
+.nav-ico {
+    transition: all 0.3s linear;
+}
+
+.nav-ico svg path {
+    transition: all 0.3s linear;
+}
+
+/* .onchangeindex {
+    color: white;
+    -webkit-text-stroke: 0.6px var(--color-white);
+}
+
+.onchangeindex p svg path {
+    fill: #fff;
+} */
+.onchangeindex {
+    color: white;
+    -webkit-text-stroke: 0.6px var(--color-white);
+}
+
+.onchangeindex p svg path {
+    fill: #fff;
 }
 
 .dropdown-content {
@@ -70,16 +112,8 @@ nav ul li a {
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .arrow {
     transition: all linear 300ms;
-}
-
-.dropdown:hover svg {
-    transform: rotate(180deg);
 }
 
 /* padding margin gap */
@@ -188,6 +222,7 @@ nav ul li a {
     padding: 10px 15px 10px 15px;
     border-radius: 24px;
     border: 1px solid #000;
+    transition: all 0.3s linear;
     background-color: var(--color-green);
 }
 
@@ -196,6 +231,7 @@ nav ul li a {
     border-radius: 24px;
     border: 1px solid var(--color-white);
     background: transparent;
+    transition: all 0.3s linear;
 }
 
 .chapter {
@@ -233,27 +269,12 @@ nav ul li a {
     transition: all 0.3s linear;
 }
 
-.sign-button:hover {
-    animation: pulsegreen 1s;
-    box-shadow: 0 0 0 0.7em transparent;
-    background-color: transparent;
-    color: #14F195;
-    border: 1px solid #14F195;
-}
-
 .youtube {
     padding: 12px 43px 12px 45px;
     border-radius: 24px;
     background-color: transparent;
     border: 1px solid #FFF;
     transition: all 0.3s linear;
-}
-
-.youtube:hover {
-    animation: pulsewhite 1s;
-    box-shadow: 0 0 0 0.7em transparent;
-    background-color: var(--color-white);
-    color: var(--color-black);
 }
 
 .undermainline {
@@ -284,11 +305,7 @@ nav ul li a {
     position: absolute;
     bottom: -13%;
     opacity: 0;
-    transition: all 100ms linear;
-}
-
-.dig-depper-card:hover .ellipes-big-depper {
-    opacity: 1;
+    transition: all 0.2s linear;
 }
 
 /* hover */
@@ -325,52 +342,145 @@ nav ul li a {
     background: white;
 }
 
+.dropdown:hover .nav-ico {
+    color: white;
+    -webkit-text-stroke: 0.6px var(--color-white);
+}
+
+.dropdown:hover .nav-ico svg path {
+    fill: #fff;
+}
+
+.under-hover:hover {
+    color: #9945FF;
+}
+
+.under-hover:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+.chapter-17:hover button {
+    animation: pulsenavy 1s;
+    box-shadow: 0 0 0 0.7em transparent;
+    background: var(--color-white);
+    color: #9945FF;
+    border: 1px solid #9945FF;
+}
+
+.chapter-17:hover svg path {
+    stroke: #9945FF;
+}
+
+.attract-started:hover button {
+    animation: pulsenavy 1s;
+    box-shadow: 0 0 0 0.7em transparent;
+    background: var(--color-white);
+    color: #9945FF;
+    border: 1px solid #9945FF;
+}
+
+.attract-started:hover svg path {
+    stroke: #9945FF;
+}
+
+.bg-svg-footer:hover svg rect {
+    fill: black;
+}
+
+.bg-svg-footer:hover svg path {
+    fill: #9945FF;
+}
+
+.bg-svg-footer:hover svg {
+    border: 1px solid #9945FF;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover svg {
+    transform: rotate(180deg);
+}
+
+.sign-button:hover {
+    animation: pulsegreen 1s;
+    box-shadow: 0 0 0 0.7em transparent;
+    background-color: transparent;
+    color: #14F195;
+    border: 1px solid #14F195;
+}
+
+.youtube:hover {
+    animation: pulsewhite 1s;
+    box-shadow: 0 0 0 0.7em transparent;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.dig-depper-card:hover {
+    animation: pulsenavy 0.8s;
+    box-shadow: 0 0 0 0.7em transparent;
+}
+
+.dig-depper-card:hover .ellipes-big-depper {
+    opacity: 1;
+}
+
 /* back-ground image */
 .bg-salona-17 {
     background-image: url(../image/bg-salona-17.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    object-fit: cover;
 }
 
 .bg-chapter14 {
     background-image: url(../image/chapter14.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    object-fit: cover;
     border-radius: 18px;
 }
 
 .bg-chapter12 {
     background-image: url(../image/chapter12.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    object-fit: cover;
     border-radius: 18px;
 }
 
 .bg-chapter1 {
     background-image: url(../image/chapter1.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    object-fit: cover;
     border-radius: 18px;
 }
 
 .bg-chapter3 {
     background-image: url(../image/chapter3.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    object-fit: cover;
     border-radius: 18px;
 }
 
 .bg-chapter167 {
     background-image: url(../image/chapter167.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    object-fit: cover;
     border-radius: 18px;
 }
 
 .bg-chapter8 {
     background-image: url(../image/chapter8.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    object-fit: cover;
     border-radius: 18px;
 }
 
@@ -399,31 +509,6 @@ nav ul li a {
     padding: 225px 21px 40px 32px;
 }
 
-.chapter-17:hover button {
-    animation: pulsenavy 1s;
-    box-shadow: 0 0 0 0.7em transparent;
-    background: var(--color-white);
-    color: #9945FF;
-    border: 1px solid #9945FF;
-}
-
-.chapter-17:hover svg path {
-    stroke: #9945FF;
-}
-
-
-.attract-started:hover button {
-    animation: pulsenavy 1s;
-    box-shadow: 0 0 0 0.7em transparent;
-    background: var(--color-white);
-    color: #9945FF;
-    border: 1px solid #9945FF;
-}
-
-.attract-started:hover svg path {
-    stroke: #9945FF;
-}
-
 .under-hover {
     position: relative;
 }
@@ -434,14 +519,9 @@ nav ul li a {
     right: 0;
     width: 0;
     bottom: -6px;
-    background: #00BCD4;
+    background: #9945FF;
     height: 2px;
     transition: 0.3s;
-}
-
-.under-hover:hover::after {
-    left: 0;
-    width: 100%;
 }
 
 /* .position */
@@ -478,18 +558,6 @@ nav ul li a {
 
 .bg-svg-footer svg path {
     transition: all 0.2s linear;
-}
-
-.bg-svg-footer:hover svg rect {
-    fill: black;
-}
-
-.bg-svg-footer:hover svg path {
-    fill: #848895;
-}
-
-.bg-svg-footer:hover svg {
-    border: 1px solid #848895;
 }
 
 .contact-card {
@@ -535,22 +603,6 @@ nav ul li a {
     }
 }
 
-/* .main-img {
-    animation: animName 8s linear infinite;
-}
-
-@keyframes animName {
-    to {
-
-        transform: rotate(0deg);
-    }
-
-    from {
-
-        transform: rotate(360deg);
-    }
-} */
-
 /* media querry */
 @media (max-width:767.5px) {
     label[id="nav"] {
@@ -584,7 +636,7 @@ nav ul li a {
         width: 100%;
         max-width: 400px;
         height: 100%;
-        background-color: #00000099;
+        background-color: #000000f1;
         position: fixed;
         top: 0;
         z-index: 3;
