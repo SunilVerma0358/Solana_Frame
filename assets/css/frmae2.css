@@ -7,7 +7,6 @@
     text-decoration: none;
     list-style-type: none;
     scroll-behavior: smooth;
-    /* outline: 1px solid red; */
 }
 
 .container {
@@ -17,7 +16,6 @@
 .bg_color {
     padding: 5px 0px 4px 0px;
     background: linear-gradient(260.33deg, #0047FF -13.37%, #00BCD4 109.53%);
-    ;
 }
 
 .bg_nav {
@@ -70,6 +68,7 @@ nav ul li a {
 .fixer3 {
     transform: rotate(-45deg) translate(13px, -10px);
 }
+
 /* dropdown */
 
 .dropdown {
@@ -84,15 +83,6 @@ nav ul li a {
 .nav-ico svg path {
     transition: all 0.3s linear;
 }
-
-/* .onchangeindex {
-    color: white;
-    -webkit-text-stroke: 0.6px var(--color-white);
-}
-
-.onchangeindex p svg path {
-    fill: #fff;
-} */
 .onchangeindex {
     color: white;
     -webkit-text-stroke: 0.6px var(--color-white);
