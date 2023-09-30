@@ -374,6 +374,8 @@
         }
         
         .common_card {
+            background: rgba(0, 0, 0, 0.28);
+            backdrop-filter: blur(10px);
             border-radius: 24px;
             padding: 20px;
         }
@@ -457,6 +459,22 @@
         .shake:hover {
             animation: shake 3s;
             animation-iteration-count: infinite;
+        }
+        
+        .white_ico svg path {
+            transition: all 0.3s linear;
+        }
+        
+        .white_ico p {
+            transition: all 0.3s linear;
+        }
+        
+        .white_ico:hover svg path {
+            fill: var(--primery-parple);
+        }
+        
+        .white_ico:hover p {
+            color: var(--primery-parple);
         }
         
         @keyframes shake {
