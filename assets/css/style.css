@@ -56,12 +56,12 @@
         }
         /* max-width */
         
-        .mw_custom_195 {
-            max-width: 195px;
+        .mw_custom_322 {
+            max-width: 322px;
         }
         
-        .mw_custom_481 {
-            max-width: 481px;
+        .mw_custom_589 {
+            max-width: 589px;
         }
         
         .mw_custom_267 {
@@ -299,14 +299,6 @@
             display: flex !important;
             align-items: center !important;
             gap: 40px;
-        }
-        
-        .abc {
-            filter: grayscale(100%);
-        }
-        
-        .abc:hover {
-            filter: grayscale(0%);
         }
         /* section */
         
